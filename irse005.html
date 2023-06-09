@@ -73,7 +73,10 @@
                             <td>GIO-666</td>
                             <td>Guasto meccanico</td>
                             <td>Aperto</td>
-                            <td><button type="button" class="btn btn-primary">
+                            <td>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                    data-target="#exampleModal">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-search" viewBox="0 0 16 16">
                                         <path
@@ -227,6 +230,54 @@
                 <div class="col-12">
                     <p class="text-center text-muted m-0"><a href="" class="text-reset">Aggiungi ticket</a> | <a href=""
                             class="text-reset">Visualizza i ticket</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row text-muted">
+                            <div class="col-5">
+                                <p class="mb-3"><span class="text-dark font-weight-bold">Guasto: </span>Guasto meccanico
+                                </p>
+                                <p class="mb-3"><span class="text-dark font-weight-bold">Categoria: </span>Sotto guasto
+                                    meccanico</p>
+                                <p class="mb-3"><span class="text-dark font-weight-bold">Priprità: </span>Alta</p>
+                            </div>
+                            <div class="col-7">
+                                <div class="row">
+                                    <div class="col-5">
+                                        <p class="mb-3"><span class="text-dark font-weight-bold">Immagine caricata
+                                                dall'operatore:</p>
+                                    </div>
+                                    <div class="col-7">
+                                        <img src="https://dummyimage.com/600x600/000/fff" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 py-5">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ratione dolores
+                                    inventore facere ullam impedit accusantium! Soluta necessitatibus tenetur quod,
+                                    repudiandae eveniet quas quisquam obcaecati, repellat laudantium enim aut, aliquid
+                                    distinctio molestias esse hic eos?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
                 </div>
             </div>
         </div>
