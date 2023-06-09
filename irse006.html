@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <style>
-        body {
+        body,
+        header {
             background-color: #DDDDDD;
         }
     </style>
@@ -20,29 +21,29 @@
 
 <body>
 
+    <header class="container-md py-3 fixed-top">
+        <div class="row">
+            <div class="col-6">
+                <img src="logo-irse.png" alt="">
+                <img src="logo-irse-iot.png" alt="">
+            </div>
+            <div class="col-6">
+                <p class="text-right">Welcome back <a href="">Gru#1</a></p>
+            </div>
+        </div>
+    </header>
+
     <div class="container-md">
         <div class="row min-vh-100 justify-content-center align-items-center">
-            <div class="col-10">
+            <div class="col-10 text-center text-muted">
 
-                <h1 class="mb-5">IRSE - Index</h1>
-             <div class="ml-5">
-                <h2 class="h5">Pagine</h2>
-                <ul class="list-unstyled">
-                    <li><a href="irse001.html">001 login</a></li>
-                    <li><a href="irse002.html">002 segnala o visualizza guasto</a></li>
-                    <li><a href="irse003.html">003 seleziona guasto</a></li>
-                    <li><a href="irse004.html">004 tipologia guasto</a></li>
-                    <li><a href="irse005.html">005 i miei ticket</a></li>
-                    <li><a href="irse006.html">006 Grazie richiesta</a></li>
-                </ul>
-                <h2 class="h5">Risorse</h2>
-                <ul class="list-unstyled">
-                    <li><a href="https://getbootstrap.com/docs/4.6/getting-started/introduction/">Documentazione
-                            Bootstrap
-                            4.6.2</a></li>
-                </ul>
-             </div>
+                <p class="h1 font-weight-light mb-5">Grazie per aver inviato <a class="text-reset font-weight-bold"
+                        style="text-decoration: underline !important; 
+                    text-underline-offset: 4px;">la tua richiesta</a></p>
+                <p class="h1 font-weight-light mb-5">La tua richiesta è stata inviata <br>all'azienda di manutenzione
+                </p>
 
+                <button type="button" class="btn btn-primary">Torna in homepage</button>
 
             </div>
         </div>
